@@ -1,7 +1,7 @@
 /**
  * Abstraction for a database table.
  */
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const PostSchema = new mongoose.Schema(
   {
@@ -12,12 +12,12 @@ const PostSchema = new mongoose.Schema(
     image: String,
     likes: {
       type: Number,
-      default: 0
-    }
+      default: 0,
+    },
   },
   {
-    timestamps: true
-  }
+    timestamps: true,
+  },
 );
 
-module.exports = mongoose.model("Post", PostSchema);
+module.exports = mongoose.model('Post', PostSchema);
